@@ -23,6 +23,7 @@ class App extends Component {
         axios.get(url)
         .then((response) => {
             self.setState({
+                //weather: [response.data].concat(self.state.weather)
                 weather: [response.data, ...self.state.weather]
             });
         });
