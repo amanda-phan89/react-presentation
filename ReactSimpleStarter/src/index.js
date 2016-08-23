@@ -15,6 +15,7 @@ class App extends Component {
             'city': '',
             'weather': []
         }
+		//this.onSearchBarChange = this.onSearchBarChange.bind(this);
     }
     cityWeatherSearch(city) {
         const url = `${ROOT_URL}&q=${city}`;
@@ -26,6 +27,9 @@ class App extends Component {
             });
         });
     }
+	/*onSearchBarChange(city) {
+		this.cityWeatherSearch(city);
+	}*/
     render () {
         return (
             <div>
