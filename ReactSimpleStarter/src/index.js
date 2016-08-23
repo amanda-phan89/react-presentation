@@ -37,6 +37,7 @@ class App extends Component {
                 <WeatherList weather={this.state.weather} />
             </div>
         );
+        //<SearchBar onSearchBarChange={this.onSearchBarChange} />
     }
 }
 
